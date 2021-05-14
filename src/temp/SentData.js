@@ -1,11 +1,13 @@
-export const emailData = [
+export const sentData = [
     {
         id: 1,
-        starred: true,
+        starred: false,
         from: 'Sample',
         subject: 'Sample',
         message: 'sample msg... ',
-        received: 'Feb 14',
+        received: 'Jan 15',
         read: true
+
+    
     }
 ]

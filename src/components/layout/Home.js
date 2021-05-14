@@ -8,7 +8,9 @@ import {emailData} from "../../temp/EmailData"
 import EmailItem from "../emailitem/EmailItem"
 
 
-const  EmailsView = () => {
+
+const Home = () => {
+    
     return (
             <Wrapper>
                 <TopWrapper>
@@ -25,9 +27,10 @@ const  EmailsView = () => {
 
 
                  <EmailsContainer>
-                {
+                { 
                     emailData.map(({id, starred, from, subject, message, received, read})=>(
                        <EmailItem
+                           key = {id}
                            id = {id}
                            starred = {starred}
                            from = {from}
@@ -39,17 +42,19 @@ const  EmailsView = () => {
                             
                        
                     ))
-                }
-
-                </EmailsContainer>
-            </Wrapper>
+                } 
+                
+   
+        </EmailsContainer>
+</Wrapper>
         )
     
 }
 
-export default EmailsView;
+export default Home;
 
  const Wrapper = styled.div `
+ height: 50vh;
  
  `
  const TopWrapper = styled.div `
@@ -59,4 +64,5 @@ export default EmailsView;
  const EmailsContainer = styled.div `
  border-top: 1px solid whitesmoke;
  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.24);
+
  `

@@ -18,7 +18,7 @@ function Mail(){
     return (
         <Wrapper>
         <TopWrapper>
-        <IconButton onClick={() => history.push("/")}>
+        <IconButton onClick={() => history.goBack()}>
             <ArrowBackIcon/>
         </IconButton>
         <IconButton>

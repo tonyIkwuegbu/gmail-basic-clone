@@ -1,11 +1,14 @@
-export const emailData = [
+export const draftData = [
     {
         id: 1,
-        starred: true,
+        starred: false,
         from: 'Sample',
         subject: 'Sample',
         message: 'sample msg... ',
-        received: 'Feb 14',
-        read: true
+        received: 'Apr 10',
+        read: false
+
     }
+
+
 ]
